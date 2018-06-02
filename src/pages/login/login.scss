@@ -1,0 +1,243 @@
+ /*animacion*/
+ #custom-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100000;
+  width:100%;
+  background-color: #002a3e;
+}
+.flb {
+  background: #4b6cb7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  height:100%;
+  width:100%;
+  animation: pulse 1s linear forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Aligner-item {
+  max-width: 50%;
+}
+.Aligner-item--top {
+  align-self: flex-start;
+}
+.Aligner-item--bottom {
+  align-self: flex-end;
+}
+#custom-overlay img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  animation: animation 3100ms linear infinite both;
+  animation-delay: 1s;
+}
+
+
+
+
+
+
+.animation-target {
+  -webkit-animation: animation 4000ms linear both;
+  animation: animation 4000ms linear both;
+}
+
+/* Generated with Bounce.js. Edit at https://goo.gl/5XMnze */
+
+@-webkit-keyframes animation { 
+  0% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, -1000, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, -1000, 0, 1); }
+  0.8% { -webkit-transform: matrix3d(2.735, 0, 0, 0, 0, 2.735, 0, 0, 0, 0, 1, 0, 0, -901.262, 0, 1); transform: matrix3d(2.735, 0, 0, 0, 0, 2.735, 0, 0, 0, 0, 1, 0, 0, -901.262, 0, 1); }
+  1.6% { -webkit-transform: matrix3d(2.67, 0, 0, 0, 0, 2.67, 0, 0, 0, 0, 1, 0, 0, -801.772, 0, 1); transform: matrix3d(2.67, 0, 0, 0, 0, 2.67, 0, 0, 0, 0, 1, 0, 0, -801.772, 0, 1); }
+  3.18% { -webkit-transform: matrix3d(2.787, 0, 0, 0, 0, 2.787, 0, 0, 0, 0, 1, 0, 0, -611.628, 0, 1); transform: matrix3d(2.787, 0, 0, 0, 0, 2.787, 0, 0, 0, 0, 1, 0, 0, -611.628, 0, 1); }
+  4.3% { -webkit-transform: matrix3d(2.898, 0, 0, 0, 0, 2.898, 0, 0, 0, 0, 1, 0, 0, -485.73, 0, 1); transform: matrix3d(2.898, 0, 0, 0, 0, 2.898, 0, 0, 0, 0, 1, 0, 0, -485.73, 0, 1); }
+  4.73% { -webkit-transform: matrix3d(2.931, 0, 0, 0, 0, 2.931, 0, 0, 0, 0, 1, 0, 0, -441.055, 0, 1); transform: matrix3d(2.931, 0, 0, 0, 0, 2.931, 0, 0, 0, 0, 1, 0, 0, -441.055, 0, 1); }
+  6.31% { -webkit-transform: matrix3d(3.001, 0, 0, 0, 0, 3.001, 0, 0, 0, 0, 1, 0, 0, -291.425, 0, 1); transform: matrix3d(3.001, 0, 0, 0, 0, 3.001, 0, 0, 0, 0, 1, 0, 0, -291.425, 0, 1); }
+  7.86% { -webkit-transform: matrix3d(3.016, 0, 0, 0, 0, 3.016, 0, 0, 0, 0, 1, 0, 0, -170.452, 0, 1); transform: matrix3d(3.016, 0, 0, 0, 0, 3.016, 0, 0, 0, 0, 1, 0, 0, -170.452, 0, 1); }
+  8.61% { -webkit-transform: matrix3d(3.014, 0, 0, 0, 0, 3.014, 0, 0, 0, 0, 1, 0, 0, -121.414, 0, 1); transform: matrix3d(3.014, 0, 0, 0, 0, 3.014, 0, 0, 0, 0, 1, 0, 0, -121.414, 0, 1); }
+  12.91% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 52.277, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 52.277, 0, 1); }
+  14.11% { -webkit-transform: matrix3d(2.999, 0, 0, 0, 0, 2.999, 0, 0, 0, 0, 1, 0, 0, 73.824, 0, 1); transform: matrix3d(2.999, 0, 0, 0, 0, 2.999, 0, 0, 0, 0, 1, 0, 0, 73.824, 0, 1); }
+  17.22% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 93.335, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 93.335, 0, 1); }
+  20.37% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 80.8, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 80.8, 0, 1); }
+  25% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 43.973, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 43.973, 0, 1); }
+  28.33% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 20.626, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 20.626, 0, 1); }
+  39.44% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, -6.231, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, -6.231, 0, 1); }
+  61.66% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 0.416, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 0.416, 0, 1); }
+  83.98% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, -0.028, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, -0.028, 0, 1); }
+  100% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+}
+
+@keyframes animation { 
+  0% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, -1000, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, -1000, 0, 1); }
+  0.8% { -webkit-transform: matrix3d(2.735, 0, 0, 0, 0, 2.735, 0, 0, 0, 0, 1, 0, 0, -901.262, 0, 1); transform: matrix3d(2.735, 0, 0, 0, 0, 2.735, 0, 0, 0, 0, 1, 0, 0, -901.262, 0, 1); }
+  1.6% { -webkit-transform: matrix3d(2.67, 0, 0, 0, 0, 2.67, 0, 0, 0, 0, 1, 0, 0, -801.772, 0, 1); transform: matrix3d(2.67, 0, 0, 0, 0, 2.67, 0, 0, 0, 0, 1, 0, 0, -801.772, 0, 1); }
+  3.18% { -webkit-transform: matrix3d(2.787, 0, 0, 0, 0, 2.787, 0, 0, 0, 0, 1, 0, 0, -611.628, 0, 1); transform: matrix3d(2.787, 0, 0, 0, 0, 2.787, 0, 0, 0, 0, 1, 0, 0, -611.628, 0, 1); }
+  4.3% { -webkit-transform: matrix3d(2.898, 0, 0, 0, 0, 2.898, 0, 0, 0, 0, 1, 0, 0, -485.73, 0, 1); transform: matrix3d(2.898, 0, 0, 0, 0, 2.898, 0, 0, 0, 0, 1, 0, 0, -485.73, 0, 1); }
+  4.73% { -webkit-transform: matrix3d(2.931, 0, 0, 0, 0, 2.931, 0, 0, 0, 0, 1, 0, 0, -441.055, 0, 1); transform: matrix3d(2.931, 0, 0, 0, 0, 2.931, 0, 0, 0, 0, 1, 0, 0, -441.055, 0, 1); }
+  6.31% { -webkit-transform: matrix3d(3.001, 0, 0, 0, 0, 3.001, 0, 0, 0, 0, 1, 0, 0, -291.425, 0, 1); transform: matrix3d(3.001, 0, 0, 0, 0, 3.001, 0, 0, 0, 0, 1, 0, 0, -291.425, 0, 1); }
+  7.86% { -webkit-transform: matrix3d(3.016, 0, 0, 0, 0, 3.016, 0, 0, 0, 0, 1, 0, 0, -170.452, 0, 1); transform: matrix3d(3.016, 0, 0, 0, 0, 3.016, 0, 0, 0, 0, 1, 0, 0, -170.452, 0, 1); }
+  8.61% { -webkit-transform: matrix3d(3.014, 0, 0, 0, 0, 3.014, 0, 0, 0, 0, 1, 0, 0, -121.414, 0, 1); transform: matrix3d(3.014, 0, 0, 0, 0, 3.014, 0, 0, 0, 0, 1, 0, 0, -121.414, 0, 1); }
+  12.91% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 52.277, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 52.277, 0, 1); }
+  14.11% { -webkit-transform: matrix3d(2.999, 0, 0, 0, 0, 2.999, 0, 0, 0, 0, 1, 0, 0, 73.824, 0, 1); transform: matrix3d(2.999, 0, 0, 0, 0, 2.999, 0, 0, 0, 0, 1, 0, 0, 73.824, 0, 1); }
+  17.22% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 93.335, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 93.335, 0, 1); }
+  20.37% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 80.8, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 80.8, 0, 1); }
+  25% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 43.973, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 43.973, 0, 1); }
+  28.33% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 20.626, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 20.626, 0, 1); }
+  39.44% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, -6.231, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, -6.231, 0, 1); }
+  61.66% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 0.416, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 0.416, 0, 1); }
+  83.98% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, -0.028, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, -0.028, 0, 1); }
+  100% { -webkit-transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+}
+
+
+
+
+
+  
+    .errorToast{
+        > div{
+          background-color:#CC0000!important;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+      .warningToast{
+        > div{
+          background-color:#FF8800!important;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+      .infoToast{
+        > div{
+          background-color:#0099CC!important;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+      .successToast{
+        > div{
+          background-color:#007E33!important;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+
+      
+
+page-login {
+  body {
+    font-family: sans-serif;
+    color: #0F2E49;
+    background: url("../assets/imgs/login.jpg");
+    min-height: 50vh;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap:  wrap;
+    align-items: center;
+    padding: 5%;
+  }
+  h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+    color: white;
+  }
+  
+  input[type="password"],
+  input[type="email"]
+   {
+    background: rgb(248, 245, 245);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    color: #000000;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+    border-radius: 20px;
+  }
+  
+  
+
+
+  fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+
+  .box{
+    background: #e1f5fe !important;
+    padding: 20px;
+    border-radius: 23px;
+    font-size: 15px;
+    color: #000;
+  }
+  //Registro
+  .btnRegistro{
+    color: rgb(2, 2, 2);
+  }
+  .btnRegistro:hover{
+    background-color: #575252;
+  }
+  .btnRegistro:active {
+    background-color: #575252;
+    transform: translateY(4px);
+  }
+  //Login
+  .btnLogin{
+    background-color: #007E33;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  .btnLogin:hover{
+    background-color: rgb(0, 71, 29);
+  }
+  .btnLogin:active {
+    background-color: rgb(0, 71, 29);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  //Seleccionar usuario
+  .btnSelect{
+    background-color: #FF8800;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  .btnSelect:hover{
+    background-color: rgb(128, 68, 0);
+  }
+  .btnSelect:active {
+    background-color: rgb(128, 68, 0);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+
+}
+
+

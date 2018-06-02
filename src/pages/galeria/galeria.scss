@@ -1,0 +1,50 @@
+
+page-galeria {
+    .miboton{
+        width: 94%;
+        //text-align: center;
+        box-shadow: 1px 1px 18px 2px #000;
+    }
+    .miboton:hover{
+        width: 94%;
+        //text-align: center;
+        box-shadow: 1px 1px 30px 7px #000;
+    }
+    .btnFeas{
+        background-color: #00acc1;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
+    .btnFeas:hover{
+        background-color: #006064;
+    }
+    .btnFeas:hover:not(.disable-hover) {
+        background-color: #006064;
+    }
+    .btnFeas:active {
+        background-color: #006064;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+    .button-md.activated{
+        background-color: #006064;
+
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    .fondo{
+
+        // background: #43cea2;  /* fallback for old browsers */
+        // background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+        // background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        background: #185a9d;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #43cea2, #185a9d);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #43cea2, #185a9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+
+}

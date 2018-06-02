@@ -1,0 +1,87 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top">
+    </div>
+    <img src="assets/img/Logo1.png">
+    <div class="Aligner-item Aligner-item--bottom">
+      
+    </div>
+  </div>
+</div>
+<!-- <ion-header >
+
+  <ion-navbar  >
+    <ion-title  >Iniciar sesión</ion-title>
+  </ion-navbar>
+
+</ion-header> -->
+
+
+<ion-content class="loginAnimacion">
+    <!-- <ion-card>
+        <ion-card-content>
+            <ion-list inset>
+                <ion-item>
+                  <ion-label floating>Usuario</ion-label>
+                  <ion-input  type="email" [(ngModel)]="usuario"> </ion-input>
+                </ion-item>
+              
+                <ion-item>
+                  <ion-label floating>Contraseña</ion-label>
+                  <ion-input  type="password"  [(ngModel)]="clave"></ion-input>
+                </ion-item>
+              
+              </ion-list>
+        </ion-card-content>
+      
+      </ion-card>
+
+      <div padding class="colorBoton">
+        <button ion-button round full large icon-left (click)="iniciarSesion()">
+            <ion-icon  name="md-log-in"></ion-icon> Iniciar sesión
+          </button>
+          <button ion-button class="register-btn" block clear (click)="registrarUsuario()">Crear una cuenta</button>
+
+    </div>
+    <div padding>
+      <button  ion-button block color="botonLogin"  outline (click)="doRadio()">Seleccionar Usuario</button>
+    </div> -->
+
+    <body>
+        <form method="post">
+          <h1>Ingrese sus datos</h1>
+            <fieldset>      
+              <label for="mail">Usuario</label>
+              <input type="email" id="mail" name="user_email" placeholder="ejemplo@ejemplo.com" [(ngModel)]="usuario">
+              <label for="password">Contraseña</label>
+              <input type="password" id="password" name="user_password" placeholder="ingrese su contraseña" [(ngModel)]="clave">         
+            </fieldset>               
+
+            <div text-center class="box">
+                <button class="btnLogin" ion-button round full large icon-left  color="lindas" (click)="iniciarSesion()">
+                    <ion-icon  name="md-log-in"></ion-icon> Iniciar sesión
+                </button>
+                <p>¿Aún no tienes cuenta?  </p>
+                <button class="btnRegistro" ion-button clear icon-left  (click)="registrarUsuario()" > <ion-icon name="create"></ion-icon> Regístrate</button>
+            </div>
+            <br>
+            <div text-center >
+                <button  class="btnSelect" ion-button full round icon-left  (click)="doRadio()" color="feas"> <ion-icon name="contacts"></ion-icon> Seleccionar Usuario</button>
+
+            </div>
+
+            </form>
+
+          </body>
+    
+
+
+  
+</ion-content>

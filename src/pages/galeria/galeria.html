@@ -1,0 +1,58 @@
+<!--
+  Generated template for the GaleriaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+
+  <ion-navbar>
+    <ion-title>galeria</ion-title>
+  </ion-navbar>
+
+</ion-header> -->
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/css/mdb.min.css" rel="stylesheet">
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.0/js/mdb.min.js"></script>
+
+
+<ion-content  text-center class="fondo">
+ <!-- <ion-slides >
+    <ion-slide *ngFor="let slide of arrayImagenes">
+      <img src='{{slide.foto}}' />
+    </ion-slide>
+  </ion-slides> -->
+  <div>
+    <input class="miboton" type="image" src="{{myPhotoURL}}">
+  </div>
+  <br>
+  <!-- <button class="btnFeas" ion-button  full large icon-left (click)="cerrarSesion()" >
+      <ion-icon name="exit"></ion-icon> Salir
+  </button> -->
+  <ion-fab right bottom>
+    <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+    <ion-fab-list side="left">
+      <button ion-fab (click)="cerrarSesion()"><ion-icon name="md-log-out"></ion-icon></button>
+      <!-- <button ion-fab><ion-icon name="ios-download-outline"></ion-icon></button> -->
+    </ion-fab-list>
+  </ion-fab>
+  <!-- <h4>X: {{x}}</h4>
+  <h4>Y: {{y}}</h4>
+  <h4>Z: {{z}}</h4> -->
+</ion-content>
+<!-- <ion-footer>
+    <ion-toolbar color="galeria">
+      <ion-title>Galería</ion-title>
+    </ion-toolbar>
+  </ion-footer> -->

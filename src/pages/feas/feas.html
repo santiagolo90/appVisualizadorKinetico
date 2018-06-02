@@ -1,0 +1,52 @@
+<!-- <ion-header>
+  <ion-navbar color="dark">
+    <ion-title>
+      Cosas Feas
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<ion-content text-center class="fondoFeas">
+
+  <!-- <ion-list>
+      <tr *ngFor="let dato of arrayCosasFeas">
+      <ion-item >
+          <td><img item-start  src='{{dato.foto}}'/> </td>
+          <td ><h2 item-end><b>{{dato.usuario}}</b></h2> </td>
+      </ion-item>
+    </tr>
+    </ion-list> -->
+    <!-- <tr *ngFor="let dato of arrayCosasFeas">
+        <ion-item >
+            <td><img item-start  src='{{dato.foto}}'/> </td>
+            <td ><h2 item-end><b>{{dato.usuario}}</b></h2> </td>
+        </ion-item>
+      </tr> -->
+
+      <ion-grid>
+          <ion-row *ngFor="let dato of arrayCosasFeas">
+
+            <ion-col>
+                <h2><b>{{dato.usuario}}</b></h2>
+                <img   src='{{dato.foto}}'/>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        
+
+    <ion-fab right bottom>
+      <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+      <ion-fab-list side="left">
+        <button ion-fab (click)="porUsuarioActualFeas()"><i class="fas fa-user fa-2x"></i></button>
+        <button ion-fab (click)="todosFeas()"><i class="fas fa-users fa-2x"></i></button>
+      </ion-fab-list>
+    </ion-fab>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar color="feas3">
+    <ion-title>Cosas Feas</ion-title>
+  </ion-toolbar>
+</ion-footer>

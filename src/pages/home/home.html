@@ -1,0 +1,49 @@
+
+
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>Inicio</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+
+<ion-content  class="fondoHome">
+  <div  class="colorBoton">
+    <div class="botonCamara">
+      <button class="btnLindas" ion-button   large icon-left (click)="getPictureCosasLindas()" >
+          <ion-icon name="camera"></ion-icon> Tomar foto cosas lindas
+      </button>
+      <br>
+      <button class="btnFeas" ion-button   large icon-left (click)="getPictureCosasFeas()" >
+          <ion-icon name="camera"></ion-icon> Tomar foto cosas feas
+      </button>
+      <br>
+      <button class="btnLindas" ion-button   large icon-left (click)="obtenerLindasDeGaleria('cosaLinda')" color="lindas">
+          <ion-icon name="cloud-upload"></ion-icon>Subir imagen cosas lindas
+        </button>
+        <br>
+        <button class="btnFeas" ion-button   large icon-left (click)="obtenerLindasDeGaleria('cosaFea')" color="feas2">
+            <ion-icon name="cloud-upload"></ion-icon> Subir imagen cosas feas
+        </button>
+    </div>
+  </div>
+  <ion-fab right bottom>
+      <button color="danger" ion-fab (click)="cerrarSesion()"><ion-icon name="md-log-out"></ion-icon></button>
+  </ion-fab>
+
+    <!-- <img [src]="image" *ngIf="image" /> -->
+  <!-- <ion-fab right bottom>
+    <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+    <ion-fab-list side="left">
+      <button ion-fab (click)="cerrarSesion()"><ion-icon name="md-log-out"></ion-icon></button>
+      <button ion-fab><ion-icon name="ios-download-outline"></ion-icon></button>
+      <button ion-fab (click)="obtenerLindasDeGaleria('cosaLinda')"  ><ion-icon name="md-eye"></ion-icon></button>
+      <button ion-fab (click)="obtenerLindasDeGaleria('cosaFea')" ><ion-icon name="md-eye-off"></ion-icon></button> 
+    </ion-fab-list>
+  </ion-fab>
+</ion-content> -->
+<!-- <ion-footer>
+  <ion-toolbar color="tabs">
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-footer> -->
