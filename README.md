@@ -1,0 +1,2 @@
+# appVisualizadorKinetico
+appVisualizadorKinético
