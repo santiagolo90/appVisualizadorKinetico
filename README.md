@@ -1,2 +1,3 @@
 # appVisualizadorKinetico
-appVisualizadorKinético
+app Visualizador Kinético (deteccion de movimientos) con IONIC 3
+
